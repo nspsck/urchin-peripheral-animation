@@ -23,32 +23,56 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include "peripheral_status.h"
 
-LV_IMG_DECLARE(corro01);
-LV_IMG_DECLARE(corro02);
-LV_IMG_DECLARE(corro03);
-LV_IMG_DECLARE(corro04);
-LV_IMG_DECLARE(corro05);
-LV_IMG_DECLARE(corro06);
-LV_IMG_DECLARE(corro07);
-LV_IMG_DECLARE(corro08);
-LV_IMG_DECLARE(corro09);
-LV_IMG_DECLARE(corro10);
-LV_IMG_DECLARE(corro11);
-LV_IMG_DECLARE(corro12);
+LV_IMG_DECLARE(frame_000);
+LV_IMG_DECLARE(frame_001);
+LV_IMG_DECLARE(frame_002);
+LV_IMG_DECLARE(frame_003);
+LV_IMG_DECLARE(frame_004);
+LV_IMG_DECLARE(frame_005);
+LV_IMG_DECLARE(frame_006);
+LV_IMG_DECLARE(frame_007);
+LV_IMG_DECLARE(frame_008);
+LV_IMG_DECLARE(frame_009);
+LV_IMG_DECLARE(frame_010);
+LV_IMG_DECLARE(frame_011);
+LV_IMG_DECLARE(frame_012);
+LV_IMG_DECLARE(frame_013);
+LV_IMG_DECLARE(frame_014);
+LV_IMG_DECLARE(frame_015);
+LV_IMG_DECLARE(frame_016);
+LV_IMG_DECLARE(frame_017);
+LV_IMG_DECLARE(frame_018);
+LV_IMG_DECLARE(frame_019);
+LV_IMG_DECLARE(frame_020);
+LV_IMG_DECLARE(frame_021);
+LV_IMG_DECLARE(frame_022);
+LV_IMG_DECLARE(frame_023);
 
 const lv_img_dsc_t *anim_imgs[] = {
-    &corro01,
-    &corro02,
-    &corro03,
-    &corro04,
-    &corro05,
-    &corro06,
-    &corro07,
-    &corro08,
-    &corro09,
-    &corro10,
-    &corro11,
-    &corro12,
+    &frame_000,
+    &frame_001,
+    &frame_002,
+    &frame_003,
+    &frame_004,
+    &frame_005,
+    &frame_006,
+    &frame_007,
+    &frame_008,
+    &frame_009,
+    &frame_010,
+    &frame_011,
+    &frame_012,
+    &frame_013,
+    &frame_014,
+    &frame_015,
+    &frame_016,
+    &frame_017,
+    &frame_018,
+    &frame_019,
+    &frame_020,
+    &frame_021,
+    &frame_022,
+    &frame_023,
 };
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
@@ -146,17 +170,18 @@ int zmk_widget_status_init(struct zmk_widget_status *widget, lv_obj_t *parent) {
 
     lv_obj_t * art = lv_animimg_create(widget->obj);            //<--
     lv_obj_center(art);                                         //<--
-    lv_animimg_set_src(art, (const void **) anim_imgs, 12);     //<--
+    lv_animimg_set_src(art, (const void **) anim_imgs, 24);     //<--
     lv_animimg_set_duration(art, CONFIG_CUSTOM_ANIMATION_SPEED);//<--
     lv_animimg_set_repeat_count(art, LV_ANIM_REPEAT_INFINITE);  //<--
     lv_animimg_start(art);                                      //<--
-
     lv_obj_align(art, LV_ALIGN_TOP_LEFT, 0, 0);
+    
     sys_slist_append(&widgets, &widget->node);
     widget_battery_status_init();
     widget_peripheral_status_init();
 
     return 0;
 }
+
 
 lv_obj_t *zmk_widget_status_obj(struct zmk_widget_status *widget) { return widget->obj; }
