@@ -48,6 +48,39 @@ LV_IMG_DECLARE(frame_021);
 LV_IMG_DECLARE(frame_022);
 LV_IMG_DECLARE(frame_023);
 LV_IMG_DECLARE(frame_024);
+LV_IMG_DECLARE(frame_025);
+LV_IMG_DECLARE(frame_026);
+LV_IMG_DECLARE(frame_027);
+LV_IMG_DECLARE(frame_028);
+LV_IMG_DECLARE(frame_029);
+LV_IMG_DECLARE(frame_030);
+LV_IMG_DECLARE(frame_031);
+LV_IMG_DECLARE(frame_032);
+LV_IMG_DECLARE(frame_033);
+LV_IMG_DECLARE(frame_034);
+LV_IMG_DECLARE(frame_035);
+LV_IMG_DECLARE(frame_036);
+LV_IMG_DECLARE(frame_037);
+LV_IMG_DECLARE(frame_038);
+LV_IMG_DECLARE(frame_039);
+LV_IMG_DECLARE(frame_040);
+LV_IMG_DECLARE(frame_041);
+LV_IMG_DECLARE(frame_042);
+LV_IMG_DECLARE(frame_043);
+LV_IMG_DECLARE(frame_044);
+LV_IMG_DECLARE(frame_045);
+LV_IMG_DECLARE(frame_046);
+LV_IMG_DECLARE(frame_047);
+LV_IMG_DECLARE(frame_048);
+LV_IMG_DECLARE(frame_049);
+LV_IMG_DECLARE(frame_050);
+LV_IMG_DECLARE(frame_051);
+LV_IMG_DECLARE(frame_052);
+LV_IMG_DECLARE(frame_053);
+LV_IMG_DECLARE(frame_054);
+LV_IMG_DECLARE(frame_055);
+LV_IMG_DECLARE(frame_056);
+LV_IMG_DECLARE(frame_057);
 
 const lv_img_dsc_t *anim_imgs[] = {
     &frame_000,
@@ -75,6 +108,39 @@ const lv_img_dsc_t *anim_imgs[] = {
     &frame_022,
     &frame_023,
     &frame_024,
+    &frame_025,
+    &frame_026,
+    &frame_027,
+    &frame_028,
+    &frame_029,
+    &frame_030,
+    &frame_031,
+    &frame_032,
+    &frame_033,
+    &frame_034,
+    &frame_035,
+    &frame_036,
+    &frame_037,
+    &frame_038,
+    &frame_039,
+    &frame_040,
+    &frame_041,
+    &frame_042,
+    &frame_043,
+    &frame_044,
+    &frame_045,
+    &frame_046,
+    &frame_047,
+    &frame_048,
+    &frame_049,
+    &frame_050,
+    &frame_051,
+    &frame_052,
+    &frame_053,
+    &frame_054,
+    &frame_055,
+    &frame_056,
+    &frame_057,
 };
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
